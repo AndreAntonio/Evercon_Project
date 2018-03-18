@@ -1,0 +1,2392 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    
+    <title> Evercon Seguros </title>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Signika:300,400,600,700" />
+    <link rel="stylesheet" type="text/css" href="_assets/_libs/font-awesome/css/font-awesome.css" /> 
+    <link rel="stylesheet" type="text/css" href="_assets/_libs/no-ui-slider/jquery.nouislider.css" />
+    <link rel="stylesheet" type="text/css" href="_assets/_libs/animate.css" /> 
+    <link rel="stylesheet" type="text/css" href="_assets/_css/style.css" />  
+
+</head>
+<body>
+
+    <div id="loader">
+
+        <div class="loader-spinner">
+        </div>
+    
+    </div>
+                 
+    <div id="contact-popup">
+    
+        <div id="contact-popup-background">
+        </div>
+    
+        <div id="contact-popup-content" class="animated speed">
+
+            <div id="contact-popup-close"><i class="fa fa-times"></i></div>
+
+            <div id="google-map" data-lat="37.42565" data-lng="-122.13535" data-zoom-level="12">
+            </div>
+            
+            <div class="padding">
+
+                <i class="fa fa-envelope-o background-icon"></i>
+                
+                <h3>Entre em contato conosco!</h3>
+                <h3 class="right">(+123) 456 789 000</h3>
+                
+                <h2>Envie um <span>email!</span></h2>
+                <form method="post" class="form">
+                
+                    <h4>Detalhes de Contato:</h4>
+                    <input type="text" name="Name" placeholder="Seu nome..." class="contact-form-element contact-form-client-name" />
+                    <input type="text" name="Phone number" placeholder="Seu telefone..." class="contact-form-element last" />
+                    <input type="text" name="E-mail" placeholder="Seu email..." class="contact-form-element contact-form-client-email" />
+                 
+                    
+                    <h4>Mensagem:</h4>
+                    <textarea name="Message" rows="5" cols="5" placeholder="Sua mensagem:" class="contact-form-element"></textarea>
+                    <button id = "botao_envio" class="button button-navy-blue send-contact" type="button">Envie sua mensagem: <i class="fa fa-paper-plane-o"></i></button>      
+                             
+                    <div class="contact-form-thanks">
+                            
+                        <div class="contact-form-thanks-content">
+                        
+                           Sua mensagem foi enviada com sucesso! 
+                            <span class="contact-form-thanks-close">Fechar essa caixa</span>
+                        
+                        </div>
+                    
+                    </div>         
+                                                                         
+                </form>
+            
+            </div>
+        
+        </div>
+    
+    </div>  
+
+    <div id="quote-popup">
+    
+        <div id="quote-popup-background">
+        </div>
+    
+        <div id="quote-popup-content" class="animated speed">
+        
+            <div id="quote-popup-close"><i class="fa fa-times"></i></div>
+            
+            <div id="quote-popup-tabs-container">
+            
+            <ul id="quote-popup-tabs">
+                
+                <li data-quote-tab-for="life-insurance">Seguro de Vida</li>
+                <li data-quote-tab-for="car-insurance">Seguro Automotivo</li>
+                <li data-quote-tab-for="house-insurance">Seguro Residencial</li>
+                <li data-quote-tab-for="travel-insurance">Seguro Viagem</li>
+                <li data-quote-tab-for="portable-insurance">Equipamentos Portateis</li>
+                <li data-quote-tab-for="health-insurance">Seguro Saude</li>
+                <li data-quote-tab-for="previdencia">Previdência</li>
+                <li data-quote-tab-for="seguro-fianca">Fiança Locatícia</li>
+                <li data-quote-tab-for="seguro-empresarial">Seguro Empresarial</li>
+                <li data-quote-tab-for="seguro-condominio">Seguro Condomínio</li>
+                <li data-quote-tab-for="seguro-aluguel">Seguro Aluguel</li>
+                
+            
+            </ul>
+                
+                </div>
+
+            <div class="quote-forms">
+
+                <!--
+                travel insurance
+                -->
+                <div class="quote-form" data-quote-form-for="travel-insurance">
+                
+                    <i class="fa fa-bus background-icon"></i>
+                
+                    <div class="quote-form-background" style="background-image: url( '_assets/_img/student-pb.jpg' );">
+                    </div>
+                    
+                    <div class="quote-form-content">
+
+                        <h2>Cotação para <span> Seguro Viagem</span></h2>
+                        <div class="form">
+
+                            <h4>Level of protection: <span class="slider-value quote-form-element" data-name="Level of protection" data-slider-id="travel-protection-level">$<span></span></span></h4>
+                            <div class="slider" data-slider-min="10000" data-slider-max="1000000" data-slider-start="200000" data-slider-step="10000" data-slider-id="travel-protection-level"></div>
+
+                            <h4>Contact details:</h4>
+                            <input type="text" class="quote-form-element quote-form-client-name" name="Full name" placeholder="Full Name..." />
+                            
+                            <span class="custom-dropdown last">
+                            
+                                <select name="How many persons?" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">How many persons?</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <input type="text" name="Phone Number" placeholder="Phone Number..." class="quote-form-element" />
+                            <input type="text" name="E-mail Address" placeholder="E-mail Address..." class="quote-form-element quote-form-client-email last" />
+                            
+                            <h4>Travel:</h4>
+                            <input type="text" name="Destination" placeholder="Destination..." class="quote-form-element" />
+                            
+                            <span class="custom-dropdown last">
+                                
+                                <select name="How long?" class="custom-dropdown-select quote-form-element">
+
+                                    <option value="-">How long?</option>
+                                    <option value="less than 1 week">less than 1 week</option>
+                                    <option value="1 week">1 week</option>
+                                    <option value="2 weeks">2 weeks</option>
+                                    <option value="3 weeks">3 weeks</option>
+                                    <option value="4 weeks and more">4 weeks and more</option>
+
+                                </select>
+
+                            </span>
+
+                            <button class="button button-navy-blue send-quote" type="button">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+                            
+                            <div class="quote-form-thanks">
+                            
+                                <div class="quote-form-thanks-content">
+                                
+                                    Sua cotação foi enviada com sucesso! 
+                                    <span class="quote-form-thanks-close">Fechar esta caixa</span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                
+                </div>
+                
+                <!--
+                car insurance
+                -->
+                <form class="quote-form" data-quote-form-for="car-insurance" action="send_carinsurance_form.php" method="POST">
+                
+                    <i class="fa fa-car background-icon"></i>
+                
+                    <div class="quote-form-background" style="background-image: url( '_assets/_img/image.png' );">
+                    </div>
+                    
+                    <div class="quote-form-content">
+
+                        <h2>Cotação para<span> Seguro Automotivo</span></h2>
+                        <div class="form">
+
+                            <h4>Dados do seguro atual:</h4>
+                            
+                            <span class="custom-dropdown">
+                            
+                                <select name="vigencia_de" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">Vigencia : De</option>
+                                    
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2000">2000</option>
+                                    <option value="1999">1999</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1980">1980</option>
+                                    <option value="1979">1979</option>
+                                    <option value="1978">1978</option>
+                                    <option value="1977">1977</option>
+                                    <option value="1976">1976</option>
+                                    <option value="1975">1975</option>
+                                    <option value="1974">1974</option>
+                                    <option value="1973">1973</option>
+                                    <option value="1972">1972</option>
+                                    <option value="1971">1971</option>
+                                    <option value="1970">1970</option>
+                                    <option value="1969">1969</option>
+                                    <option value="1968">1968</option>
+                                    <option value="1967">1967</option>
+                                    <option value="1966">1966</option>
+                                    <option value="1965">1965</option>
+                                    <option value="1964">1964</option>
+                                    <option value="1963">1963</option>
+                                    <option value="1962">1962</option>
+                                    <option value="1961">1961</option>
+                                    <option value="1960">1960</option>
+                                    <option value="1959">1959</option>
+                                    <option value="1958">1958</option>
+                                    <option value="1957">1957</option>
+                                    <option value="1956">1956</option>
+                                    <option value="1955">1955</option>
+                                    <option value="1954">1954</option>
+                                    <option value="1953">1953</option>
+                                    <option value="1952">1952</option>
+                                    <option value="1951">1951</option>
+                                    <option value="1950">1950</option>
+                                
+                                </select>
+                                
+                            </span>
+                            
+                             <span class="custom-dropdown last">
+                                <select name="vigencia_a" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">Vigencia: Até</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2000">2000</option>
+                                    <option value="1999">1999</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1980">1980</option>
+                                    <option value="1979">1979</option>
+                                    <option value="1978">1978</option>
+                                    <option value="1977">1977</option>
+                                    <option value="1976">1976</option>
+                                    <option value="1975">1975</option>
+                                    <option value="1974">1974</option>
+                                    <option value="1973">1973</option>
+                                    <option value="1972">1972</option>
+                                    <option value="1971">1971</option>
+                                    <option value="1970">1970</option>
+                                    <option value="1969">1969</option>
+                                    <option value="1968">1968</option>
+                                    <option value="1967">1967</option>
+                                    <option value="1966">1966</option>
+                                    <option value="1965">1965</option>
+                                    <option value="1964">1964</option>
+                                    <option value="1963">1963</option>
+                                    <option value="1962">1962</option>
+                                    <option value="1961">1961</option>
+                                    <option value="1960">1960</option>
+                                    <option value="1959">1959</option>
+                                    <option value="1958">1958</option>
+                                    <option value="1957">1957</option>
+                                    <option value="1956">1956</option>
+                                    <option value="1955">1955</option>
+                                    <option value="1954">1954</option>
+                                    <option value="1953">1953</option>
+                                    <option value="1952">1952</option>
+                                    <option value="1951">1951</option>
+                                    <option value="1950">1950</option>
+                                
+                                </select>
+                               
+                            
+                            </span>
+                            
+                            <input type="text" class="quote-form-element" name="seguro_novo" placeholder="Seguro Novo"/>
+                            <input type="text" class="quote-form-element last" name="renovacao" placeholder="Renovação"/>
+                            <input type="text" class="quote-form-element" name="cia_atual" placeholder="Cia Atual"/>
+                            <input type="text" class="quote-form-element last" name="bonus" placeholder="Bonus"/>
+                            
+                            <input type="text" id="nome_completo" class="quote-form-element quote-form-client-name" name="nome_completo" placeholder="Nome Completo" />
+            
+                            <span class="custom-dropdown last">
+                            
+                                <select name="idade" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">Idade</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                    <option value="32">32</option>
+                                    <option value="33">33</option>
+                                    <option value="34">34</option>
+                                    <option value="35">35</option>
+                                    <option value="36">36</option>
+                                    <option value="37">37</option>
+                                    <option value="38">38</option>
+                                    <option value="39">39</option>
+                                    <option value="40">40</option>
+                                    <option value="41">41</option>
+                                    <option value="42">42</option>
+                                    <option value="43">43</option>
+                                    <option value="44">44</option>
+                                    <option value="45">45</option>
+                                    <option value="46">46</option>
+                                    <option value="47">47</option>
+                                    <option value="48">48</option>
+                                    <option value="49">49</option>
+                                    <option value="50">50</option>
+                                    <option value="51">51</option>
+                                    <option value="52">52</option>
+                                    <option value="53">53</option>
+                                    <option value="54">54</option>
+                                    <option value="55">55</option>
+                                    <option value="56">56</option>
+                                    <option value="57">57</option>
+                                    <option value="58">58</option>
+                                    <option value="59">59</option>
+                                    <option value="60">60</option>
+                                    <option value="61">61</option>
+                                    <option value="62">62</option>
+                                    <option value="63">63</option>
+                                    <option value="64">64</option>
+                                    <option value="65">65</option>
+                                    <option value="66">66</option>
+                                    <option value="67">67</option>
+                                    <option value="68">68</option>
+                                    <option value="69">69</option>
+                                    <option value="70">70</option>
+                                    <option value="71">71</option>
+                                    <option value="72">72</option>
+                                    <option value="73">73</option>
+                                    <option value="74">74</option>
+                                    <option value="75">75</option>
+                                    <option value="76">76</option>
+                                    <option value="77">77</option>
+                                    <option value="78">78</option>
+                                    <option value="79">79</option>
+                                    <option value="80">80</option>
+                                    <option value="81">81</option>
+                                    <option value="82">82</option>
+                                    <option value="83">83</option>
+                                    <option value="84">84</option>
+                                    <option value="85">85</option>
+                                    <option value="86">86</option>
+                                    <option value="87">87</option>
+                                    <option value="88">88</option>
+                                    <option value="89">89</option>
+                                    <option value="90">90</option>
+                                    <option value="91">91</option>
+                                    <option value="92">92</option>
+                                    <option value="93">93</option>
+                                    <option value="94">94</option>
+                                    <option value="95">95</option>
+                                    <option value="96">96</option>
+                                    <option value="97">97</option>
+                                    <option value="98">98</option>
+                                    <option value="99">99</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <input type="text" name="cpf" placeholder="CPF" class="quote-form-element" />
+                            <input type="text" name="cnh" placeholder="CNH" class="quote-form-element last" />
+                            
+                            <span class="custom-dropdown">
+                            
+                                <select name="estado_civil" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">Estado Civil :</option>
+                                    <option value="solteiro">Solteiro</option>
+                                    <option value="casado">Casado</option>
+                                    <option value="divorciado">Divorciado</option>
+                                    
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <span class="custom-dropdown last">
+                                <select name="data_primeira_habilitacao" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">Ano da Primeira Habilitação:</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2000">2000</option>
+                                    <option value="1999">1999</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1980">1980</option>
+                                    <option value="1979">1979</option>
+                                    <option value="1978">1978</option>
+                                    <option value="1977">1977</option>
+                                    <option value="1976">1976</option>
+                                    <option value="1975">1975</option>
+                                    <option value="1974">1974</option>
+                                    <option value="1973">1973</option>
+                                    <option value="1972">1972</option>
+                                    <option value="1971">1971</option>
+                                    <option value="1970">1970</option>
+                                    <option value="1969">1969</option>
+                                    <option value="1968">1968</option>
+                                    <option value="1967">1967</option>
+                                    <option value="1966">1966</option>
+                                    <option value="1965">1965</option>
+                                    <option value="1964">1964</option>
+                                    <option value="1963">1963</option>
+                                    <option value="1962">1962</option>
+                                    <option value="1961">1961</option>
+                                    <option value="1960">1960</option>
+                                    <option value="1959">1959</option>
+                                    <option value="1958">1958</option>
+                                    <option value="1957">1957</option>
+                                    <option value="1956">1956</option>
+                                    <option value="1955">1955</option>
+                                    <option value="1954">1954</option>
+                                    <option value="1953">1953</option>
+                                    <option value="1952">1952</option>
+                                    <option value="1951">1951</option>
+                                    <option value="1950">1950</option>
+                                
+                                </select>
+                               
+                            
+                            </span>
+                            
+                                       
+                                       
+   
+                           <input type="text" class="quote-form-element" name="endereço" placeholder="Endereço"/>
+                           <input type="text" class="quote-form-element last" name="complemento" placeholder="Complemento"/>
+                           <input type="text" class="quote-form-element" name="bairro" placeholder="Bairro"/>
+                           <input type="text" class="quote-form-element last" name="cidade" placeholder="Cidade"/>
+                           <input type="text" class="quote-form-element" name="estado" placeholder="Estado"/>
+                           <input type="text" class="quote-form-element last" name="cep" placeholder="CEP"/>
+                           <input type="text" class="quote-form-element last" name="profissao" placeholder="Profissão"/>
+                           <input type="text" class="quote-form-element last" name="telefone" placeholder="Telefone"/>
+                           <input type="text" class="quote-form-element last" name="email" placeholder="Email"/>
+                           
+                           <h4>Dados do Condutor Principal</h4>
+                           
+                           <span class="custom-dropdown last">
+                                <select name="relacao_condutor_principal_segurado" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">Relação com o segurado:</option>
+                                    <option value="conjuge">Cônjuge</option>
+                                    <option value="filho">Filho(a)</option>
+                                    <option value="pai/mae">Pai/Mãe</option>
+                                    <option value="motorista">Motorista</option>
+                                    <option value="outros">Outros</option>
+                                    
+                                   
+                                
+                                </select>
+                               
+                            
+                            </span>
+                           
+                           <input type="text" class="quote-form-element last" name="nome_condutor" placeholder="Nome"/>
+                           
+                           <span class="custom-dropdown last">
+                            
+                                <select name="idade_condutor" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">Idade</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                    <option value="32">32</option>
+                                    <option value="33">33</option>
+                                    <option value="34">34</option>
+                                    <option value="35">35</option>
+                                    <option value="36">36</option>
+                                    <option value="37">37</option>
+                                    <option value="38">38</option>
+                                    <option value="39">39</option>
+                                    <option value="40">40</option>
+                                    <option value="41">41</option>
+                                    <option value="42">42</option>
+                                    <option value="43">43</option>
+                                    <option value="44">44</option>
+                                    <option value="45">45</option>
+                                    <option value="46">46</option>
+                                    <option value="47">47</option>
+                                    <option value="48">48</option>
+                                    <option value="49">49</option>
+                                    <option value="50">50</option>
+                                    <option value="51">51</option>
+                                    <option value="52">52</option>
+                                    <option value="53">53</option>
+                                    <option value="54">54</option>
+                                    <option value="55">55</option>
+                                    <option value="56">56</option>
+                                    <option value="57">57</option>
+                                    <option value="58">58</option>
+                                    <option value="59">59</option>
+                                    <option value="60">60</option>
+                                    <option value="61">61</option>
+                                    <option value="62">62</option>
+                                    <option value="63">63</option>
+                                    <option value="64">64</option>
+                                    <option value="65">65</option>
+                                    <option value="66">66</option>
+                                    <option value="67">67</option>
+                                    <option value="68">68</option>
+                                    <option value="69">69</option>
+                                    <option value="70">70</option>
+                                    <option value="71">71</option>
+                                    <option value="72">72</option>
+                                    <option value="73">73</option>
+                                    <option value="74">74</option>
+                                    <option value="75">75</option>
+                                    <option value="76">76</option>
+                                    <option value="77">77</option>
+                                    <option value="78">78</option>
+                                    <option value="79">79</option>
+                                    <option value="80">80</option>
+                                    <option value="81">81</option>
+                                    <option value="82">82</option>
+                                    <option value="83">83</option>
+                                    <option value="84">84</option>
+                                    <option value="85">85</option>
+                                    <option value="86">86</option>
+                                    <option value="87">87</option>
+                                    <option value="88">88</option>
+                                    <option value="89">89</option>
+                                    <option value="90">90</option>
+                                    <option value="91">91</option>
+                                    <option value="92">92</option>
+                                    <option value="93">93</option>
+                                    <option value="94">94</option>
+                                    <option value="95">95</option>
+                                    <option value="96">96</option>
+                                    <option value="97">97</option>
+                                    <option value="98">98</option>
+                                    <option value="99">99</option>
+                                
+                                </select>
+                            
+                            </span>
+                           
+                            <span class="custom-dropdown">
+                            
+                                
+                                <select name="estado_civil_condutor" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">Estado Civil :</option>
+                                    <option value="solteiro">Solteiro</option>
+                                    <option value="casado">Casado</option>
+                                    <option value="divorciado">Divorciado</option>
+                                    
+                                
+                                </select>
+                            
+                            </span>
+                           <input type="text" class="quote-form-element last" name="cpf_condutor" placeholder="CPF"/>
+                           <input type="text" class="quote-form-element last" name="cnh_condutor" placeholder="CNH"/>
+                           
+                           <span class="custom-dropdown">
+                            
+                                <select name="data_habilitacao_condutor" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">Data da Primeira Habilitação</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2000">2000</option>
+                                    <option value="1999">1999</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1980">1980</option>
+                                    <option value="1979">1979</option>
+                                    <option value="1978">1978</option>
+                                    <option value="1977">1977</option>
+                                    <option value="1976">1976</option>
+                                    <option value="1975">1975</option>
+                                    <option value="1974">1974</option>
+                                    <option value="1973">1973</option>
+                                    <option value="1972">1972</option>
+                                    <option value="1971">1971</option>
+                                    <option value="1970">1970</option>
+                                    <option value="1969">1969</option>
+                                    <option value="1968">1968</option>
+                                    <option value="1967">1967</option>
+                                    <option value="1966">1966</option>
+                                    <option value="1965">1965</option>
+                                    <option value="1964">1964</option>
+                                    <option value="1963">1963</option>
+                                    <option value="1962">1962</option>
+                                    <option value="1961">1961</option>
+                                    <option value="1960">1960</option>
+                                    <option value="1959">1959</option>
+                                    <option value="1958">1958</option>
+                                    <option value="1957">1957</option>
+                                    <option value="1956">1956</option>
+                                    <option value="1955">1955</option>
+                                    <option value="1954">1954</option>
+                                    <option value="1953">1953</option>
+                                    <option value="1952">1952</option>
+                                    <option value="1951">1951</option>
+                                    <option value="1950">1950</option>
+                                
+                                </select>
+                            
+                            </span>
+                           
+                           <input type="text" name="profissao_condutor" placeholder="Profissão" class="quote-form-element last" />
+                           
+                           
+                            
+                            
+
+                            
+                            
+                            <h4>Quanto, caso existam, aos condutores entre 18 e 25 anos, residentes com o segurado.</h4>
+                            
+                            
+                            <span class="custom-dropdown">
+                                   
+                                <select name="condutores_casa_dirigem" class="custom-dropdown-select quote-form-element last">
+                                
+                                    <option value="-">Para os que dirigem, qual o sexo?</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="Ambos">Ambos</option>
+                                    <option value="Ambos">Não reside.</option>
+                                    <option value="nao_dirigem">Não Dirigem.</option>
+                                    
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            
+                         
+                            
+                            <span class="custom-dropdown last">
+                                   
+                                <select name="condutores_casa_nao_dirigem" class="custom-dropdown-select quote-form-element last">
+                                
+                                    <option value="-">Para os que não dirigem, qual o sexo?</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="Ambos">Ambos</option>
+                                    <option value="Ambos">Não reside.</option>
+                                    <option value="dirigem">Dirigem</option>
+                                    
+                                
+                                </select>
+                            
+                            </span>
+                            
+                        <input type="text" name="distancia_trabalho" placeholder="Distancia de casa ao trabalho(Km)" class="quote-form-element" />
+                        <input type="text" name="quilometragem_mensal" placeholder="Quilometragem Mensal(Km)" class="quote-form-element last" />
+                        
+                         <span class="custom-dropdown">
+                                   
+                                <select name="garagem_fechada" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">Guarda em garagem fechada?</option>
+                                    <option value="Sim">Sim</option>
+                                    <option value="">Não</option>
+                                    
+                                
+                                </select>
+                             
+                         </span>
+                        
+                        <h4>Possui Garagem:</h4>
+                            
+                            <span class="custom-dropdown">
+                                <select name="possui_garagem_casa" class="custom-dropdown-select quote-form-element">
+                                    <option value="-">Em casa:</option>
+                                    <option value="Sim">Sim</option>
+                                    <option value="Não">Não</option>
+                                </select>
+                            </span>
+                        
+                        <span class="custom-dropdown last">
+                                <select name="possui_garagem_trabalho" class="custom-dropdown-select quote-form-element">
+                                    <option value="-">No trabalho:</option>
+                                    <option value="Sim">Sim</option>
+                                    <option value="Não">Não</option>
+                                </select>
+                            </span>
+                        
+                        <span class="custom-dropdown">
+                                <select name="possui_garagem_escola" class="custom-dropdown-select quote-form-element">
+                                    <option value="-">Na escola/faculdade:</option>
+                                    <option value="Sim">Sim</option>
+                                    <option value="Não">Não</option>
+                                </select>
+                            </span>
+                        
+                         <span class="custom-dropdown last">
+                                <select name="tipo_residencia" class="custom-dropdown-select quote-form-element">
+                                    <option value="-">Tipo de Residência</option>
+                                    <option value="Apartamento">Apartamento</option>
+                                    <option value="Casa">Casa</option>
+                                    <option value="Casa em Condomínio">Casa em Condomínio</option>
+                                </select>
+                            </span>
+                        
+                        <span class="custom-dropdown">
+                                <select name="possui_portao" class="custom-dropdown-select quote-form-element">
+                                    <option value="-">Possuí Portão:</option>
+                                    <option value="Automatico">Automatico</option>
+                                    <option value="Manual">Manual</option>
+                                </select>
+                            </span>
+                        
+                            
+                        <h4>Dados do Veículo</h4>
+                        
+                        <input type="text" name="marca" placeholder="Marca" class="quote-form-element" />
+                        <input type="text" name="modelo" placeholder="Modelo" class="quote-form-element last" />
+                               
+                         <span class="custom-dropdown">
+                            
+                                <select name="ano/modelo" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">Ano/Modelo</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2000">2000</option>
+                                    <option value="1999">1999</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1980">1980</option>
+                                    <option value="1979">1979</option>
+                                    <option value="1978">1978</option>
+                                    <option value="1977">1977</option>
+                                    <option value="1976">1976</option>
+                                    <option value="1975">1975</option>
+                                    <option value="1974">1974</option>
+                                    <option value="1973">1973</option>
+                                    <option value="1972">1972</option>
+                                    <option value="1971">1971</option>
+                                    <option value="1970">1970</option>
+                                    <option value="1969">1969</option>
+                                    <option value="1968">1968</option>
+                                    <option value="1967">1967</option>
+                                    <option value="1966">1966</option>
+                                    <option value="1965">1965</option>
+                                    <option value="1964">1964</option>
+                                    <option value="1963">1963</option>
+                                    <option value="1962">1962</option>
+                                    <option value="1961">1961</option>
+                                    <option value="1960">1960</option>
+                                    <option value="1959">1959</option>
+                                    <option value="1958">1958</option>
+                                    <option value="1957">1957</option>
+                                    <option value="1956">1956</option>
+                                    <option value="1955">1955</option>
+                                    <option value="1954">1954</option>
+                                    <option value="1953">1953</option>
+                                    <option value="1952">1952</option>
+                                    <option value="1951">1951</option>
+                                    <option value="1950">1950</option>
+                                
+                                </select>
+                            
+                            </span>   
+                        
+                        <input type="text" name="placa" placeholder="Placa" class="quote-form-element last" />
+                        
+                        <span class="custom-dropdown">
+                                <select name="portas" class="custom-dropdown-select quote-form-element">
+                                    <option value="-">Portas</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    
+                                </select>
+                            </span>
+                        
+                        <input type="text" name="chassi" placeholder="Chassi" class="quote-form-element last" />
+                        <input type="text" name="renavam" placeholder="Renavam" class="quote-form-element last" />
+                                                
+                        <span class="custom-dropdown">
+                                <select name="zero_km" class="custom-dropdown-select quote-form-element">
+                                    <option value="-">Veículo 0 Km?</option>
+                                    <option value="Sim">Sim</option>
+                                    <option value="Não">Não</option>
+                                </select>
+                            </span>
+                        
+                        <span class="custom-dropdown">
+                                <select name="cambio" class="custom-dropdown-select quote-form-element">
+                                    <option value="-">Câmbio</option>
+                                    <option value="Manual">Manual</option>
+                                    <option value="Automático">Automático</option>
+                                </select>
+                            </span>
+                        
+                        <input type="text" name="cor" placeholder="Cor" class="quote-form-element last" />
+                        
+                        
+                        
+                        
+                        <span class="custom-dropdown">
+                                <select name="combustivel" class="custom-dropdown-select quote-form-element">
+                                    <option value="-">Combustível:</option>
+                                    <option value="Gasolina">Gasolina</option>
+                                    <option value="Alcool">Alcool</option>
+                                    <option value="Flex">Flex</option>
+                                    <option value="Diesel">Diesel</option>
+                                    <option value="Gás Natural">Gás Natural</option>
+                                    <option value="Elétrico">Elétrico</option>
+                                </select>
+                            </span>
+                        
+                        
+                      <span class="custom-dropdown last">
+                                <select name="possui_antifurto" class="custom-dropdown-select quote-form-element">
+                                    <option value="-">Possui Antifurto?</option>
+                                    <option value="Sim">Sim</option>
+                                    <option value="Não">Não</option>
+                                </select>
+                            </span>  
+                        
+                      <input type="text" name="tipo_antifurto" placeholder="Tipo de Antifurto" class="quote-form-element" />
+                      <h6>Deixar branco caso não tenha</h6>
+                            
+                            
+
+                            <input class="button button-navy-blue send-quote" type="submit" value="Fazer Cotação!"> <i class="fa fa-paper-plane-o"></i>
+                        
+                            <div class="quote-form-thanks">
+                            
+                                <div class="quote-form-thanks-content">
+                                
+                                    Sua cotação foi enviada com sucesso!
+                                    <span class="quote-form-thanks-close">Fechar esta caixa!</span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                
+                </form>
+                
+                <!--
+                life insurance
+                -->
+                <div class="quote-form" data-quote-form-for="life-insurance">
+                
+                    <i class="fa fa-umbrella background-icon"></i>
+                
+                    <div class="quote-form-background" style="background-image: url( '_assets/_img/image.png' );">
+                    </div>
+                    
+                    <div class="quote-form-content">
+
+                        <h2>Cotação para<span> Seguro de Vida</span></h2>
+                        <div class="form">
+
+                            <h4>Level of protection: <span class="slider-value quote-form-element" data-name="Level of protection" data-slider-id="life-protection-level">$<span></span></span></h4>
+                            <div class="slider" data-slider-min="10000" data-slider-max="1000000" data-slider-start="200000" data-slider-step="10000" data-slider-id="life-protection-level"></div>
+
+                            <h4>Contact details:</h4>
+                            <input type="text" class="quote-form-element quote-form-client-name" name="Full name" placeholder="Full Name..." />
+                            
+                            <span class="custom-dropdown last">
+                            
+                                <select name="Age" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">Your age</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                    <option value="32">32</option>
+                                    <option value="33">33</option>
+                                    <option value="34">34</option>
+                                    <option value="35">35</option>
+                                    <option value="36">36</option>
+                                    <option value="37">37</option>
+                                    <option value="38">38</option>
+                                    <option value="39">39</option>
+                                    <option value="40">40</option>
+                                    <option value="41">41</option>
+                                    <option value="42">42</option>
+                                    <option value="43">43</option>
+                                    <option value="44">44</option>
+                                    <option value="45">45</option>
+                                    <option value="46">46</option>
+                                    <option value="47">47</option>
+                                    <option value="48">48</option>
+                                    <option value="49">49</option>
+                                    <option value="50">50</option>
+                                    <option value="51">51</option>
+                                    <option value="52">52</option>
+                                    <option value="53">53</option>
+                                    <option value="54">54</option>
+                                    <option value="55">55</option>
+                                    <option value="56">56</option>
+                                    <option value="57">57</option>
+                                    <option value="58">58</option>
+                                    <option value="59">59</option>
+                                    <option value="60">60</option>
+                                    <option value="61">61</option>
+                                    <option value="62">62</option>
+                                    <option value="63">63</option>
+                                    <option value="64">64</option>
+                                    <option value="65">65</option>
+                                    <option value="66">66</option>
+                                    <option value="67">67</option>
+                                    <option value="68">68</option>
+                                    <option value="69">69</option>
+                                    <option value="70">70</option>
+                                    <option value="71">71</option>
+                                    <option value="72">72</option>
+                                    <option value="73">73</option>
+                                    <option value="74">74</option>
+                                    <option value="75">75</option>
+                                    <option value="76">76</option>
+                                    <option value="77">77</option>
+                                    <option value="78">78</option>
+                                    <option value="79">79</option>
+                                    <option value="80">80</option>
+                                    <option value="81">81</option>
+                                    <option value="82">82</option>
+                                    <option value="83">83</option>
+                                    <option value="84">84</option>
+                                    <option value="85">85</option>
+                                    <option value="86">86</option>
+                                    <option value="87">87</option>
+                                    <option value="88">88</option>
+                                    <option value="89">89</option>
+                                    <option value="90">90</option>
+                                    <option value="91">91</option>
+                                    <option value="92">92</option>
+                                    <option value="93">93</option>
+                                    <option value="94">94</option>
+                                    <option value="95">95</option>
+                                    <option value="96">96</option>
+                                    <option value="97">97</option>
+                                    <option value="98">98</option>
+                                    <option value="99">99</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <input type="text" name="Phone Number" placeholder="Phone Number..." class="quote-form-element" />
+                            <input type="text" name="E-mail Address" placeholder="E-mail Address..." class="quote-form-element quote-form-client-email last" />
+                            
+                            <h4>Have you used tobacco or nicotine products in the last 12 months?</h4>
+                            <div class="checkbox quote-form-element" data-checked="yes" data-name="Have you used tobacco or nicotine products in the last 12 months?">
+                            
+                                <span class="checkbox-status"><i class="fa fa-check"></i></span>
+                                <span class="checkbox-values">
+                                
+                                    <span class="checkbox-value-checked">Yes, I have</span>
+                                    <span class="checkbox-value-unchecked">No, I haven't</span>
+                                
+                                </span>
+                            
+                            </div>
+                            
+                            <button class="button button-navy-blue send-quote" type="button">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+                        
+                            <div class="quote-form-thanks">
+                            
+                                <div class="quote-form-thanks-content">
+                                
+                                    Sua cotação foi enviada com sucesso!
+                                    <span class="quote-form-thanks-close">Close this notice.</span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                
+                </div>
+                
+                <!--
+                house insurance
+                -->
+                <div class="quote-form" data-quote-form-for="house-insurance">
+                
+                    <i class="fa fa-home background-icon"></i>
+                
+                    <div class="quote-form-background" style="background-image: url( '_assets/_img/image.png' );">
+                    </div>
+                    
+                    <div class="quote-form-content">
+
+                        <h2>Cotação para <span> Seguro Residencial</span></h2>
+                        <div class="form">
+                        
+                            <h4>Your house:</h4>
+                            <span class="custom-dropdown">
+                            
+                                <select name="What sort of property is it?" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">What sort of property is it?</option>
+                                    <option value="House">House</option>
+                                    <option value="Flat / Apartment">Flat / Apartment</option>
+                                    <option value="Bungalow">Bungalow</option>
+                                    <option value="Town house">Town house</option>
+                                    <option value="Other">Other</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <span class="custom-dropdown last">
+                            
+                                <select name="What type of property is it?" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">What type of property is it?</option>
+                                    <option value="Semi-detached">Semi-detached</option>
+                                    <option value="Detached">Detached</option>
+                                    <option value="Link-detached">Link-detached</option>
+                                    <option value="Terraced">Terraced</option>
+                                    <option value="End terrace">End terrace</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <input type="text" class="quote-form-element" name="Roughly when was it built?" placeholder="Roughly when was it built?" />
+                            <input type="text" class="quote-form-element last" name="House Postcode" placeholder="House Postcode" />
+                        
+                            <h4>Contact details:</h4>
+                            <input type="text" class="quote-form-element quote-form-client-name" name="Full name" placeholder="Full Name..." />
+                            
+                            <span class="custom-dropdown last">
+                            
+                                <select name="Age" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">Your age</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                    <option value="32">32</option>
+                                    <option value="33">33</option>
+                                    <option value="34">34</option>
+                                    <option value="35">35</option>
+                                    <option value="36">36</option>
+                                    <option value="37">37</option>
+                                    <option value="38">38</option>
+                                    <option value="39">39</option>
+                                    <option value="40">40</option>
+                                    <option value="41">41</option>
+                                    <option value="42">42</option>
+                                    <option value="43">43</option>
+                                    <option value="44">44</option>
+                                    <option value="45">45</option>
+                                    <option value="46">46</option>
+                                    <option value="47">47</option>
+                                    <option value="48">48</option>
+                                    <option value="49">49</option>
+                                    <option value="50">50</option>
+                                    <option value="51">51</option>
+                                    <option value="52">52</option>
+                                    <option value="53">53</option>
+                                    <option value="54">54</option>
+                                    <option value="55">55</option>
+                                    <option value="56">56</option>
+                                    <option value="57">57</option>
+                                    <option value="58">58</option>
+                                    <option value="59">59</option>
+                                    <option value="60">60</option>
+                                    <option value="61">61</option>
+                                    <option value="62">62</option>
+                                    <option value="63">63</option>
+                                    <option value="64">64</option>
+                                    <option value="65">65</option>
+                                    <option value="66">66</option>
+                                    <option value="67">67</option>
+                                    <option value="68">68</option>
+                                    <option value="69">69</option>
+                                    <option value="70">70</option>
+                                    <option value="71">71</option>
+                                    <option value="72">72</option>
+                                    <option value="73">73</option>
+                                    <option value="74">74</option>
+                                    <option value="75">75</option>
+                                    <option value="76">76</option>
+                                    <option value="77">77</option>
+                                    <option value="78">78</option>
+                                    <option value="79">79</option>
+                                    <option value="80">80</option>
+                                    <option value="81">81</option>
+                                    <option value="82">82</option>
+                                    <option value="83">83</option>
+                                    <option value="84">84</option>
+                                    <option value="85">85</option>
+                                    <option value="86">86</option>
+                                    <option value="87">87</option>
+                                    <option value="88">88</option>
+                                    <option value="89">89</option>
+                                    <option value="90">90</option>
+                                    <option value="91">91</option>
+                                    <option value="92">92</option>
+                                    <option value="93">93</option>
+                                    <option value="94">94</option>
+                                    <option value="95">95</option>
+                                    <option value="96">96</option>
+                                    <option value="97">97</option>
+                                    <option value="98">98</option>
+                                    <option value="99">99</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <input type="text" name="Phone Number" placeholder="Phone Number..." class="quote-form-element" />
+                            <input type="text" name="E-mail Address" placeholder="E-mail Address..." class="quote-form-element quote-form-client-email last" />
+                        
+                            <button class="button button-navy-blue send-quote" type="button">Fazer Cotação <i class="fa fa-paper-plane-o"></i></button>
+                        
+                            <div class="quote-form-thanks">
+                            
+                                <div class="quote-form-thanks-content">
+                                
+                                     Sua cotação foi enviada com sucesso!
+                                    <span class="quote-form-thanks-close">Close this notice.</span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                
+                </div>
+                
+                 <!--
+                portable insurance
+                -->
+                
+                <div class="quote-form" data-quote-form-for="portable-insurance">
+                
+                    <i class="fa fa-bus background-icon"></i>
+                
+                    <div class="quote-form-background" style="background-image: url( '_assets/_img/student-pb.jpg' );">
+                    </div>
+                    
+                    <div class="quote-form-content">
+
+                        <h2>Cotação para <span> Seguro </span></h2>
+                        <div class="form">
+
+                            <h4>Level of protection: <span class="slider-value quote-form-element" data-name="Level of protection" data-slider-id="travel-protection-level">$<span></span></span></h4>
+                            <div class="slider" data-slider-min="10000" data-slider-max="1000000" data-slider-start="200000" data-slider-step="10000" data-slider-id="travel-protection-level"></div>
+
+                            <h4>Contact details:</h4>
+                            <input type="text" class="quote-form-element quote-form-client-name" name="Full name" placeholder="Full Name..." />
+                            
+                            <span class="custom-dropdown last">
+                            
+                                <select name="How many persons?" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">How many persons?</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <input type="text" name="Phone Number" placeholder="Phone Number..." class="quote-form-element" />
+                            <input type="text" name="E-mail Address" placeholder="E-mail Address..." class="quote-form-element quote-form-client-email last" />
+                            
+                            <h4>Travel:</h4>
+                            <input type="text" name="Destination" placeholder="Destination..." class="quote-form-element" />
+                            
+                            <span class="custom-dropdown last">
+                                
+                                <select name="How long?" class="custom-dropdown-select quote-form-element">
+
+                                    <option value="-">How long?</option>
+                                    <option value="less than 1 week">less than 1 week</option>
+                                    <option value="1 week">1 week</option>
+                                    <option value="2 weeks">2 weeks</option>
+                                    <option value="3 weeks">3 weeks</option>
+                                    <option value="4 weeks and more">4 weeks and more</option>
+
+                                </select>
+
+                            </span>
+
+                            <button class="button button-navy-blue send-quote" type="button">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+                            
+                            <div class="quote-form-thanks">
+                            
+                                <div class="quote-form-thanks-content">
+                                
+                                    Sua cotação foi enviada com sucesso! 
+                                    <span class="quote-form-thanks-close">Fechar esta caixa</span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                
+                </div>
+                
+                 <!--
+                health insurance
+                -->
+                
+                <div class="quote-form" data-quote-form-for="health-insurance">
+                
+                    <i class="fa fa-bus background-icon"></i>
+                
+                    <div class="quote-form-background" style="background-image: url( '_assets/_img/student-pb.jpg' );">
+                    </div>
+                    
+                    <div class="quote-form-content">
+
+                        <h2>Cotação para <span> Seguro </span></h2>
+                        <div class="form">
+
+                            <h4>Level of protection: <span class="slider-value quote-form-element" data-name="Level of protection" data-slider-id="travel-protection-level">$<span></span></span></h4>
+                            <div class="slider" data-slider-min="10000" data-slider-max="1000000" data-slider-start="200000" data-slider-step="10000" data-slider-id="travel-protection-level"></div>
+
+                            <h4>Contact details:</h4>
+                            <input type="text" class="quote-form-element quote-form-client-name" name="Full name" placeholder="Full Name..." />
+                            
+                            <span class="custom-dropdown last">
+                            
+                                <select name="How many persons?" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">How many persons?</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <input type="text" name="Phone Number" placeholder="Phone Number..." class="quote-form-element" />
+                            <input type="text" name="E-mail Address" placeholder="E-mail Address..." class="quote-form-element quote-form-client-email last" />
+                            
+                            <h4>Travel:</h4>
+                            <input type="text" name="Destination" placeholder="Destination..." class="quote-form-element" />
+                            
+                            <span class="custom-dropdown last">
+                                
+                                <select name="How long?" class="custom-dropdown-select quote-form-element">
+
+                                    <option value="-">How long?</option>
+                                    <option value="less than 1 week">less than 1 week</option>
+                                    <option value="1 week">1 week</option>
+                                    <option value="2 weeks">2 weeks</option>
+                                    <option value="3 weeks">3 weeks</option>
+                                    <option value="4 weeks and more">4 weeks and more</option>
+
+                                </select>
+
+                            </span>
+
+                            <button class="button button-navy-blue send-quote" type="button">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+                            
+                            <div class="quote-form-thanks">
+                            
+                                <div class="quote-form-thanks-content">
+                                
+                                    Sua cotação foi enviada com sucesso! 
+                                    <span class="quote-form-thanks-close">Fechar esta caixa</span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                
+                </div>
+                
+                <!--
+                previdencia
+                -->
+                
+                <div class="quote-form" data-quote-form-for="previdencia">
+                
+                    <i class="fa fa-bus background-icon"></i>
+                
+                    <div class="quote-form-background" style="background-image: url( '_assets/_img/student-pb.jpg' );">
+                    </div>
+                    
+                    <div class="quote-form-content">
+
+                        <h2>Cotação para <span> Seguro </span></h2>
+                        <div class="form">
+
+                            <h4>Level of protection: <span class="slider-value quote-form-element" data-name="Level of protection" data-slider-id="travel-protection-level">$<span></span></span></h4>
+                            <div class="slider" data-slider-min="10000" data-slider-max="1000000" data-slider-start="200000" data-slider-step="10000" data-slider-id="travel-protection-level"></div>
+
+                            <h4>Contact details:</h4>
+                            <input type="text" class="quote-form-element quote-form-client-name" name="Full name" placeholder="Full Name..." />
+                            
+                            <span class="custom-dropdown last">
+                            
+                                <select name="How many persons?" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">How many persons?</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <input type="text" name="Phone Number" placeholder="Phone Number..." class="quote-form-element" />
+                            <input type="text" name="E-mail Address" placeholder="E-mail Address..." class="quote-form-element quote-form-client-email last" />
+                            
+                            <h4>Travel:</h4>
+                            <input type="text" name="Destination" placeholder="Destination..." class="quote-form-element" />
+                            
+                            <span class="custom-dropdown last">
+                                
+                                <select name="How long?" class="custom-dropdown-select quote-form-element">
+
+                                    <option value="-">How long?</option>
+                                    <option value="less than 1 week">less than 1 week</option>
+                                    <option value="1 week">1 week</option>
+                                    <option value="2 weeks">2 weeks</option>
+                                    <option value="3 weeks">3 weeks</option>
+                                    <option value="4 weeks and more">4 weeks and more</option>
+
+                                </select>
+
+                            </span>
+
+                            <button class="button button-navy-blue send-quote" type="button">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+                            
+                            <div class="quote-form-thanks">
+                            
+                                <div class="quote-form-thanks-content">
+                                
+                                    Sua cotação foi enviada com sucesso! 
+                                    <span class="quote-form-thanks-close">Fechar esta caixa</span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                
+                </div>
+                
+                <!--
+                fianca locaticia
+                -->
+                
+                <div class="quote-form" data-quote-form-for="seguro-fianca">
+                
+                    <i class="fa fa-bus background-icon"></i>
+                
+                    <div class="quote-form-background" style="background-image: url( '_assets/_img/student-pb.jpg' );">
+                    </div>
+                    
+                    <div class="quote-form-content">
+
+                        <h2>Cotação para <span> Seguro </span></h2>
+                        <div class="form">
+
+                            <h4>Level of protection: <span class="slider-value quote-form-element" data-name="Level of protection" data-slider-id="travel-protection-level">$<span></span></span></h4>
+                            <div class="slider" data-slider-min="10000" data-slider-max="1000000" data-slider-start="200000" data-slider-step="10000" data-slider-id="travel-protection-level"></div>
+
+                            <h4>Contact details:</h4>
+                            <input type="text" class="quote-form-element quote-form-client-name" name="Full name" placeholder="Full Name..." />
+                            
+                            <span class="custom-dropdown last">
+                            
+                                <select name="How many persons?" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">How many persons?</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <input type="text" name="Phone Number" placeholder="Phone Number..." class="quote-form-element" />
+                            <input type="text" name="E-mail Address" placeholder="E-mail Address..." class="quote-form-element quote-form-client-email last" />
+                            
+                            <h4>Travel:</h4>
+                            <input type="text" name="Destination" placeholder="Destination..." class="quote-form-element" />
+                            
+                            <span class="custom-dropdown last">
+                                
+                                <select name="How long?" class="custom-dropdown-select quote-form-element">
+
+                                    <option value="-">How long?</option>
+                                    <option value="less than 1 week">less than 1 week</option>
+                                    <option value="1 week">1 week</option>
+                                    <option value="2 weeks">2 weeks</option>
+                                    <option value="3 weeks">3 weeks</option>
+                                    <option value="4 weeks and more">4 weeks and more</option>
+
+                                </select>
+
+                            </span>
+
+                            <button class="button button-navy-blue send-quote" type="button">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+                            
+                            <div class="quote-form-thanks">
+                            
+                                <div class="quote-form-thanks-content">
+                                
+                                    Sua cotação foi enviada com sucesso! 
+                                    <span class="quote-form-thanks-close">Fechar esta caixa</span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                
+                </div>
+                
+                <!--
+                seguro empresarial
+                -->
+                
+                <div class="quote-form" data-quote-form-for="seguro-empresarial">
+                
+                    <i class="fa fa-bus background-icon"></i>
+                
+                    <div class="quote-form-background" style="background-image: url( '_assets/_img/student-pb.jpg' );">
+                    </div>
+                    
+                    <div class="quote-form-content">
+
+                        <h2>Cotação para <span> Seguro </span></h2>
+                        <div class="form">
+
+                            <h4>Level of protection: <span class="slider-value quote-form-element" data-name="Level of protection" data-slider-id="travel-protection-level">$<span></span></span></h4>
+                            <div class="slider" data-slider-min="10000" data-slider-max="1000000" data-slider-start="200000" data-slider-step="10000" data-slider-id="travel-protection-level"></div>
+
+                            <h4>Contact details:</h4>
+                            <input type="text" class="quote-form-element quote-form-client-name" name="Full name" placeholder="Full Name..." />
+                            
+                            <span class="custom-dropdown last">
+                            
+                                <select name="How many persons?" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">How many persons?</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <input type="text" name="Phone Number" placeholder="Phone Number..." class="quote-form-element" />
+                            <input type="text" name="E-mail Address" placeholder="E-mail Address..." class="quote-form-element quote-form-client-email last" />
+                            
+                            <h4>Travel:</h4>
+                            <input type="text" name="Destination" placeholder="Destination..." class="quote-form-element" />
+                            
+                            <span class="custom-dropdown last">
+                                
+                                <select name="How long?" class="custom-dropdown-select quote-form-element">
+
+                                    <option value="-">How long?</option>
+                                    <option value="less than 1 week">less than 1 week</option>
+                                    <option value="1 week">1 week</option>
+                                    <option value="2 weeks">2 weeks</option>
+                                    <option value="3 weeks">3 weeks</option>
+                                    <option value="4 weeks and more">4 weeks and more</option>
+
+                                </select>
+
+                            </span>
+
+                            <button class="button button-navy-blue send-quote" type="button">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+                            
+                            <div class="quote-form-thanks">
+                            
+                                <div class="quote-form-thanks-content">
+                                
+                                    Sua cotação foi enviada com sucesso! 
+                                    <span class="quote-form-thanks-close">Fechar esta caixa</span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                
+                </div>
+                
+                <!--
+                seguro condominio
+                -->
+                
+                <div class="quote-form" data-quote-form-for="seguro-condominio">
+                
+                    <i class="fa fa-bus background-icon"></i>
+                
+                    <div class="quote-form-background" style="background-image: url( '_assets/_img/student-pb.jpg' );">
+                    </div>
+                    
+                    <div class="quote-form-content">
+
+                        <h2>Cotação para <span> Seguro </span></h2>
+                        <div class="form">
+
+                            <h4>Level of protection: <span class="slider-value quote-form-element" data-name="Level of protection" data-slider-id="travel-protection-level">$<span></span></span></h4>
+                            <div class="slider" data-slider-min="10000" data-slider-max="1000000" data-slider-start="200000" data-slider-step="10000" data-slider-id="travel-protection-level"></div>
+
+                            <h4>Contact details:</h4>
+                            <input type="text" class="quote-form-element quote-form-client-name" name="Full name" placeholder="Full Name..." />
+                            
+                            <span class="custom-dropdown last">
+                            
+                                <select name="How many persons?" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">How many persons?</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <input type="text" name="Phone Number" placeholder="Phone Number..." class="quote-form-element" />
+                            <input type="text" name="E-mail Address" placeholder="E-mail Address..." class="quote-form-element quote-form-client-email last" />
+                            
+                            <h4>Travel:</h4>
+                            <input type="text" name="Destination" placeholder="Destination..." class="quote-form-element" />
+                            
+                            <span class="custom-dropdown last">
+                                
+                                <select name="How long?" class="custom-dropdown-select quote-form-element">
+
+                                    <option value="-">How long?</option>
+                                    <option value="less than 1 week">less than 1 week</option>
+                                    <option value="1 week">1 week</option>
+                                    <option value="2 weeks">2 weeks</option>
+                                    <option value="3 weeks">3 weeks</option>
+                                    <option value="4 weeks and more">4 weeks and more</option>
+
+                                </select>
+
+                            </span>
+
+                            <button class="button button-navy-blue send-quote" type="button">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+                            
+                            <div class="quote-form-thanks">
+                            
+                                <div class="quote-form-thanks-content">
+                                
+                                    Sua cotação foi enviada com sucesso! 
+                                    <span class="quote-form-thanks-close">Fechar esta caixa</span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                
+                </div>
+                
+                <!--
+                garantia aluguel
+                -->
+                
+                <div class="quote-form" data-quote-form-for="seguro-aluguel">
+                
+                    <i class="fa fa-bus background-icon"></i>
+                
+                    <div class="quote-form-background" style="background-image: url( '_assets/_img/student-pb.jpg' );">
+                    </div>
+                    
+                    <div class="quote-form-content">
+
+                        <h2>Cotação para <span> Seguro </span></h2>
+                        <div class="form">
+
+                            <h4>Level of protection: <span class="slider-value quote-form-element" data-name="Level of protection" data-slider-id="travel-protection-level">$<span></span></span></h4>
+                            <div class="slider" data-slider-min="10000" data-slider-max="1000000" data-slider-start="200000" data-slider-step="10000" data-slider-id="travel-protection-level"></div>
+
+                            <h4>Contact details:</h4>
+                            <input type="text" class="quote-form-element quote-form-client-name" name="Full name" placeholder="Full Name..." />
+                            
+                            <span class="custom-dropdown last">
+                            
+                                <select name="How many persons?" class="custom-dropdown-select quote-form-element">
+                                
+                                    <option value="-">How many persons?</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                
+                                </select>
+                            
+                            </span>
+                            
+                            <input type="text" name="Phone Number" placeholder="Phone Number..." class="quote-form-element" />
+                            <input type="text" name="E-mail Address" placeholder="E-mail Address..." class="quote-form-element quote-form-client-email last" />
+                            
+                            <h4>Travel:</h4>
+                            <input type="text" name="Destination" placeholder="Destination..." class="quote-form-element" />
+                            
+                            <span class="custom-dropdown last">
+                                
+                                <select name="How long?" class="custom-dropdown-select quote-form-element">
+
+                                    <option value="-">How long?</option>
+                                    <option value="less than 1 week">less than 1 week</option>
+                                    <option value="1 week">1 week</option>
+                                    <option value="2 weeks">2 weeks</option>
+                                    <option value="3 weeks">3 weeks</option>
+                                    <option value="4 weeks and more">4 weeks and more</option>
+
+                                </select>
+
+                            </span>
+
+                            <button class="button button-navy-blue send-quote" type="button">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+                            
+                            <div class="quote-form-thanks">
+                            
+                                <div class="quote-form-thanks-content">
+                                
+                                    Sua cotação foi enviada com sucesso! 
+                                    <span class="quote-form-thanks-close">Fechar esta caixa</span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                
+                </div>
+                
+                
+                
+                
+                
+            
+            </div>
+        
+        </div>
+    
+    </div>
+
+    <header>
+        <div class="center">
+            <div class="logo">
+                <a href="/index.html"><img class="logo_img" src="_assets/_img/logo_evercon.png" alt="Insurance Agency" /></a>
+                        </div>
+            <nav>
+                <ul class="menu">
+               
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><button class="menu-element" data-action="show-quote-popup" data-quote-key="life-insurance">Faça sua cotação!</button></li>
+                    <li><a href="parceiros.html">Parceiros</a></li>     
+                    <li><a href="parceiros.html">Benefícios</a></li>
+                    
+                            <li>
+        
+                            </li>
+
+                            <li>
+
+                                <a href=""><i class="fa fa-caret-left"></i> Seguro</a>
+                                <ul class="submenu animated speed fadeInRight">
+                                
+                                    <li><a href="seguro-vida.html">Seguro de Vida</a></li>
+                                    <li><a href="seguro-auto.html">Seguro Automotivo</a></li>
+                                    <li><a href="seguro-residencia.html">Seguro Residencial</a></li>
+                                    <li><a href="seguro-template.html">Seguro Viagem</a></li>
+                                    <li><a href="">Seguro de Equipamentos Portáteis</a></li>
+                                    <li><a href="">Seguro Saude</a></li>
+                                    <li><a href="">Previdência</a></li>
+                                    <li><a href="">Fiança Locatícia</a></li>
+                                    <li><a href="">Seguro Empresarial</a></li>
+                                    <li><a href="">Seguro Condomínio</a></li>
+                                    <li><a href="">Garantia Aluguel</a></li>
+                                
+                                </ul>
+                            
+                            </li>
+                        
+                        </ul>
+    
+                </ul>
+                
+                <div class="menu-responsive"><i class="fa fa-bars"></i></div>
+            
+            </nav>
+            
+            <div class="clear">
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="heading">
+    
+        <div class="heading-slides">
+        
+            <div class="heading-slide-single" data-slide-id="1" style="background-image: url( '_assets/_img/student-pb.jpg' );">
+            
+                <div class="flying-1">
+                
+                    <span>Aqui, você encontra tudo que precisa para se sentir seguro!</span>
+                
+                </div>
+                
+                <div class="flying-2">
+                
+                    <h3>Serviços para deixar<br /> sua familia segura</h3>
+                    <p>Curabitur iaculis ante a nibh vulputate sollicitudin.</p>
+                    
+                    <button class="button button-white" data-action="show-quote-popup" data-quote-key="life-insurance">Fazer Cotação <i class="fa fa-paper-plane-o"></i></button>
+                
+                </div>
+                
+                <div class="heading-content">
+                    
+                    <h2>Um seguro lhe resguarda de imprevistos!</h2>
+                    <h3>Lorem ipsum dolor sit<br /> amet, consectetur.</h3>
+                    
+                    <button class="button button-navy-blue" data-action="show-quote-popup" data-quote-key="life-insurance">Fazer Cotação<i class="fa fa-paper-plane-o"></i></button>
+        
+                </div>
+            
+            </div>
+            
+            <div class="heading-slide-single" data-slide-id="2" style="background-image: url( '_assets/_img/medical-563427_1920.jpg' );">
+            
+                <div class="flying-1">
+                
+                    <span>Faça já sua cotação!</span>
+                
+                </div>
+                
+                <div class="flying-2">
+                
+                    <h3>Proteja seu <br /> Patrimônio</h3>
+                    <p>Curabitur iaculis ante a nibh vulputate sollicitudin.</p>
+                    
+                    <button class="button button-white" data-action="show-quote-popup" data-quote-key="life-insurance">Fazer Cotação<i class="fa fa-paper-plane-o"></i></button>
+                
+                </div>
+                
+                <div class="heading-content">
+                    
+                    <h2>Leve a vida sem preocupação!</h2>
+                    <h3>Lorem ipsum dolor sit<br /> amet, consectetur.</h3>
+                    
+                    <button class="button button-navy-blue" data-action="show-quote-popup" data-quote-key="life-insurance">Fazer Cotação<i class="fa fa-paper-plane-o"></i></button>
+        
+                </div>
+            
+            </div>
+        
+        </div>
+
+    </div>
+    
+    <section class="call-to-action background">
+    
+        <div class="center">
+
+            <div class="left">
+            
+                <h2>Tome conta de sua familia!</h2>
+                <p>A Evercon Seguros é uma corretora que está no mercado de seguros há mais de 11 anos. 
+
+Desde então,vem prestando serviços de consultoria, orientando e oferecendo as melhores alternativas de seguros à seus clientes, tendo sempre mente fornecer a melhor cobertura, baseada nas necessidades do segurado, pelo no melhor custo/benefício! </p>
+                
+                <div class="form">
+            
+                    <div class="call-to-action-thanks">
+                    
+                        <div class="call-to-action-thanks-content">
+                        
+                            Obrigado! Entraremos em contato!
+                            <span class="call-to-action-thanks-close"></span>
+                        
+                        </div>
+                    
+                    </div>
+            
+                    <input type="text" name="Phone number" placeholder="Seu telefone..." class="phone-number" />
+                    <button class="button button-navy-blue send-phone-call-quote">Receba nossa ligação! <i class="fa fa-phone"></i></button>
+                
+                </div>
+                    
+            </div>
+        
+            <div class="right">
+            
+                <div class="circles">
+
+                    <div class="circle-1 circle-pulse">
+                    </div>
+                    
+                    <div class="circle-2 circle-pulse">
+                    </div>
+                    
+                    <div class="circle-3 circle-pulse">
+                    </div>
+                    
+                    <div class="circle-4 circle-pulse">
+                    </div>
+                    
+                    <a href="tel:+123456789000">
+                    
+                        <div class="circle-center">
+                        
+                            <div class="circle-center-tip">Ligue para nós: <strong>(11) 2373-8050</strong></div>
+                            <i class="fa fa-phone"></i>
+                        
+                        </div>
+                    
+                    </a>
+                
+                </div>
+            
+            </div>
+            
+            <div class="clear">
+            </div>
+
+        </div>
+    
+    </section>
+    
+    <section class="insurances-slider section-gray">
+    
+        <div class="center">
+        
+            <div class="green-line">
+            </div>
+            
+            <div class="images">
+            
+                <div class="image" style="background-image: url( '_assets/_img/mcfadden-ward-house-1584097_1280.jpg' );" data-insurance-key="house">
+                </div>
+                
+                <div class="image" style="background-image: url( '_assets/_img/family-591579_1920.jpg' );" data-insurance-key="travel">
+                </div>
+                
+                <div class="image" style="background-image: url( '_assets/_img/alley-1582731_1920.jpg' );" data-insurance-key="life">
+                </div>
+
+                <div class="image" style="background-image: url( '_assets/_img/car-1709512_960_720.jpg' );" data-insurance-key="car">
+                </div>
+            
+            </div>
+        
+            <div class="content">
+
+                <div class="descriptions">
+
+                    <div class="description" data-insurance-key="house">
+                    
+                        <h3>Faça já sua cotação!</h3>
+                        <h2>Seguro Residencial</h2>
+                        
+                        <p> O seguro Residêncial foi desenvolvido para proteger seu patrimônio. Seja residência habitual ou de veraneio, como casas ou apartamentos de praia e campo. Acessível a qualquer bolso, simples e de fácil contratação, oferece amplas coberturas e serviços complementaress em uma única apólice.</p>
+                        <button class="button button-navy-blue" data-action="show-quote-popup" data-quote-key="house-insurance">Faça uma cotação <i class="fa fa-paper-plane-o"></i></button>
+                        <a class="button button-navy-blue" href="seguro-residencia.html" data-quote-key="house-insurance">Leia mais! <i class="fa fa-book"></i></a>
+                    
+                    </div>
+                    
+                    <div class="description" data-insurance-key="travel">
+                    
+                        <h3>Faça já sua cotação!</h3>
+                        <h2>Seguro Viagem</h2>
+                        
+                        <p>Todos estamos sujeitos a riscos como, problemas de saúde, perdas financeiras, acidentes e outros eventos indesejados fazem parte da nossa vida. A Evercon Seguros oferece consultoria com excelência nesta área. Através de um levantamento das necessidades, oferece um conjunto de garantias e planos diferenciados e estruturados que proporcionam o benefício ideal a sua empresa.</p>
+                        <button class="button button-navy-blue" data-action="show-quote-popup" data-quote-key="travel-insurance">Faça uma cotação<i class="fa fa-paper-plane-o"></i></button>
+                        <a class="button button-navy-blue" href="seguro-template.html" data-quote-key="house-insurance">Leia mais! <i class="fa fa-book"></i></a>
+                    
+                    </div>
+                    
+                    <div class="description" data-insurance-key="life">
+                    
+                        <h3>Faça já sua cotação!</h3>
+                        <h2>Seguro de Vida</h2>
+                        
+                        <p>Todos estamos sujeitos a riscos como, problemas de saúde, perdas financeiras, acidentes e outros eventos indesejados fazem parte da nossa vida. A Evercon Seguros oferece consultoria com excelência nesta área. Através de um levantamento das necessidades, oferece um conjunto de garantias e planos diferenciados e estruturados que proporcionam o benefício ideal a sua empresa.</p>
+                        <button class="button button-navy-blue" data-action="show-quote-popup" data-quote-key="life-insurance">Faça uma cotação<i class="fa fa-paper-plane-o"></i></button>
+                        <a class="button button-navy-blue" href="seguro-vida.html" data-quote-key="house-insurance">Leia mais! <i class="fa fa-book"></i></a>
+                    
+                    </div>
+
+                    <div class="description" data-insurance-key="car">
+                    
+                        <h3>Faça já sua cotação!</h3>
+                        <h2>Seguro Automotivo</h2>
+                        
+                        <p>O seguro de automóvel é um seguro diferenciado e feito sob medida para cada pessoa, depende de um perfil. 
+                         É adaptado aos seus hábitos de utilização do veículo.A Evercon Seguros trata com cuidado este detalhes para o segurado não correr risco em caso de sinistro, sem contar que pode contar com suporte da corretora em qualquer horário do dia em caso de sinistro.</p>
+                        <button class="button button-navy-blue" data-action="show-quote-popup" data-quote-key="car-insurance">Faça uma cotação <i class="fa fa-paper-plane-o"></i></button>
+                        <a class="button button-navy-blue" href="seguro-auto.html" data-quote-key="house-insurance">Leia mais! <i class="fa fa-book"></i></a>
+                    
+                    </div>
+
+                </div>
+                
+                <ul class="tabs">
+                
+                    <li class="active" data-insurance-key="house">
+                    
+                        <i class="fa fa-home"></i>
+                        <span>Seguro Residencial</span>
+                    
+                    </li>
+                    
+                    <li data-insurance-key="travel">
+                    
+                        <i class="fa fa-bus"></i>
+                        <span>Seguro Viagem</span>
+                    
+                    </li>
+                    
+                    <li data-insurance-key="life">
+                    
+                        <i class="fa fa-umbrella"></i>
+                        <span>Seguro de Vida</span>
+                    
+                    </li>
+                    
+                    <li data-insurance-key="car">
+                    
+                        <i class="fa fa-car"></i>
+                        <span>Seguro Automotivo</span>
+                    
+                    </li>
+
+                </ul>
+            
+            </div>
+            
+            <div class="clear">
+            </div>
+        
+        </div>
+    
+    </section>
+
+    
+
+    
+    
+    <section class="image-slogan with-parallax" style="background-image: url( '_assets/_img/safety-in-bw-1314551.jpg' );">
+    
+        <div class="flying-1">
+        
+            <span>Cuide de sua família!</span>
+        
+        </div>
+        
+        <div class="flying-2">
+        
+            <h3>Seguros para o<br /> futuro de seus filhos</h3>
+            <p>Venha conhecer nossos serviços!</p>
+
+            <button class="button button-white" data-action="show-quote-popup" data-quote-key="life-insurance">Fazer Cotação! <i class="fa fa-paper-plane-o"></i></button>
+        
+        </div>
+    
+    </section>
+
+    <section class="contact section-gray">
+    
+        <div class="center">
+        
+            <i class="fa fa-envelope-o background-icon"></i>
+            <div class="contact-details">
+
+                <div class="contact-detail-single">
+                
+                    <h3><i class="fa fa-map-marker"></i> Informações da Empresa</h3>
+                    <p><strong>Evercon Seguros</strong><br /></p>
+                    <p class="without-margin-bottom"><br />São Paulo, SP</p>
+                     
+                </div>
+
+                <div class="contact-detail-single">
+                
+                    <h3><i class="fa fa-envelope-o"></i> Detalhes de Contato:</h3>
+                    <p>Endereço de Email: <br /><a href="#">contato@everconseguros.com.br</a></p>     
+                    <p class="without-margin-bottom"><button class="button button-navy-blue" data-action="show-contact-popup">Entre em contato! <i class="fa fa-paper-plane-o"></i></button></p>
+                
+                </div>
+                
+                <div class="contact-detail-single contact-detail-single-last">
+                
+                    <h2>(11) 2373-8050</h2> 
+                    <p class="without-margin-bottom">Disponivel em Horario Comercial</p> 
+                
+                </div>
+            
+            </div>
+
+        </div>
+    
+    </section>
+
+    <footer>
+
+        <div class="center">
+
+            <div class="green-line">
+            </div>
+        
+            <nav>
+        
+                <ul class="left">
+    
+                    <li>
+                    
+                        <h4>Seguros</h4>  
+                        <ul class="sub">
+                        
+                            <li><a href="seguro-vida.html">Seguro de Vida</a></li>
+                            <li><a href="/car-insurance.html">Seguro Automotivo</a></li>
+                            <li><a href="/house-insurance.html">Seguro Residencial</a></li>
+                            <li><a href="/travel-insurance.html">Seguro Viagem</a></li>
+                        
+                        </ul>
+                    
+                    </li>
+    
+                    <li>
+                    
+                        <h4>Páginas</h4>
+                        <ul class="sub">
+                        
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">Parceiros</a></li>
+                            <li><a href="/claims.html">Seguro</a></li>
+                            <li><button class="menu-element" data-action="show-quote-popup" data-quote-key="life-insurance">Get a quote</button></li>
+                            <li><a href="/blog.html">Benefício</a></li>
+                            <li><button class="menu-element" data-action="show-contact-popup">Contato</button></li>
+                        
+                        </ul>
+                    
+                    </li>
+                    
+                    <li>
+                    
+                        <h4>Siga-nos nas redes sociais!</h4>
+                        <ul class="sub">
+                        
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Google+</a></li>
+                        
+                        </ul>
+                    
+                    </li>
+                    
+                </ul>
+            
+            </nav>
+            
+            <ul class="right">
+            
+                <li>Todos os direitos reservados &copy; 2016 <span class="divider">&middot;</span> <a href="/index.html">Evercon Seguros</a></li>
+                <li><div class="fb-like" data-href="https://www.facebook.com/envato" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div></li>
+            
+            </ul>
+
+            <div class="clear">
+            </div>
+        
+        </div>
+    
+    </footer>
+
+    <!--
+    facebook SDK
+    -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script src="_assets/_libs/jquery.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="_assets/_libs/no-ui-slider/jquery.nouislider.all.min.js"></script>
+    <script src="_assets/_libs/smoothscroll.js"></script>
+    <script src="_assets/_libs/parallax.js"></script>
+    <script src="_assets/_js/functions.js"></script>
+
+</body>
+</html>
